@@ -1,18 +1,20 @@
 import { DefaultTheme } from 'styled-components';
 
 const breakpoints = {
-  mobile: '480px',
+  mobile1: '375px',
+  mobile2: '480px',
   tablet: '768px',
   laptop: '1024px',
   desktop: '1200px',
 } as const;
 
 const colors = {
-  main: 'red',
+  main: '#3C3025',
 } as const;
 
 const media = {
-  mobile: `(max-width: ${breakpoints.mobile})`,
+  mobile1: `(max-width: ${breakpoints.mobile1})`,
+  mobile2: `(max-width: ${breakpoints.mobile2})`,
   tablet: `(max-width: ${breakpoints.tablet})`,
   laptop: `(max-width: ${breakpoints.laptop})`,
   desktop: `(max-width: ${breakpoints.desktop})`,

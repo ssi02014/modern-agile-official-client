@@ -6,6 +6,9 @@
     "prettier" 
   ],
   "rules": {
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/display-name": "off",
+    "@next/next/no-img-element": "off"
   }
 }

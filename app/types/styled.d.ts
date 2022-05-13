@@ -10,7 +10,8 @@ declare module 'styled-components' {
       main: string;
     };
     media: {
-      mobile: string;
+      mobile1: string;
+      mobile2: string;
       tablet: string;
       laptop: string;
       desktop: string;

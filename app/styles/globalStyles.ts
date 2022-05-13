@@ -6,8 +6,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;  
     box-sizing: border-box;
   }
+  html {
+    width: 100%;
+  }
 
   body {
+    width: 100%;
+    margin: 0 auto;
   }
 
   ul, li, ol {
@@ -16,6 +21,19 @@ const GlobalStyle = createGlobalStyle`
   
   a {
     text-decoration: none;
+    color: #111;
+  }
+
+
+  // animations
+  @keyframes fadeInOut {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 `;
 

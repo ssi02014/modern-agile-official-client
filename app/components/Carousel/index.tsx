@@ -24,8 +24,6 @@ const Carousel = ({ list }: Props) => {
     arrows: false,
   };
 
-  console.log(showCount);
-
   return (
     <CarouselWrapper>
       <Slider {...settings}>

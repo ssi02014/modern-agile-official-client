@@ -18,8 +18,8 @@ const MainValues = () => {
   const onIntersect = useCallback(([entry]: IntersectionObserverEntry[]) => {
     if (entry.isIntersecting) {
       if (box1Ref.current && box2Ref.current) {
-        box1Ref.current.style.animation = 'slideTop 1s 0.3s forwards';
-        box2Ref.current.style.animation = 'slideTop 1s 0.7s forwards';
+        box1Ref.current.style.animation = 'slideTop 1s 0.1s forwards';
+        box2Ref.current.style.animation = 'slideTop 1s 0.5s forwards';
       }
     }
   }, []);

@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export"
+    "deploy": "next build && next export && touch out/.nojekyll"
   },
+  "homepage": "http://hhyemi.github.io/hyemi-portfolio",
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
     "@types/styled-components": "^5.1.25",

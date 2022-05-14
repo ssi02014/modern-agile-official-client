@@ -22,7 +22,7 @@ const NavMenuWrapper = styled.section`
   right: 0;
   background-color: #fff;
   animation: fadeInOut 0.3s;
-  z-index: 10;
+  z-index: 100;
 `;
 
 export default NavMenu;

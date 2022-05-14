@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   border-bottom: 1px solid #3b3b3b;
-  z-index: 100;
+  z-index: 20;
 
   ul {
     display: flex;

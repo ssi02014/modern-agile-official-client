@@ -7,7 +7,15 @@ import Document, {
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-class MyDocument extends Document {
+class MyDocument implements Document {
+  styles: any;
+  context: any;
+  setState: any;
+  forceUpdate: any;
+  props: any;
+  state: any;
+  refs: any;
+
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;

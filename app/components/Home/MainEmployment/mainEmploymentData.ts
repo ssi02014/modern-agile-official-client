@@ -2,9 +2,13 @@ export const mainEmploymentData = [
   {
     id: 1,
     title: 'Korbit (코빗)',
-    desc: '(핀테크) 국내 주요 4대 가상 화폐 거래 플랫폼',
+    desc: '(핀테크) 국내 주요 4대 가상 화폐 거래 플랫폼 - 1기',
   },
-  { id: 2, title: '번개장터', desc: '(중고거래) 국내 주요 중고거래 플랫폼' },
+  {
+    id: 2,
+    title: '번개장터',
+    desc: '(중고거래) 국내 주요 중고거래 플랫폼',
+  },
   {
     id: 3,
     title: 'ADENASOFT (아데나소프트웨어)',

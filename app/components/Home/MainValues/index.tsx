@@ -18,7 +18,7 @@ const MainValues = () => {
   const onIntersect = useCallback(([entry]: IntersectionObserverEntry[]) => {
     if (entry.isIntersecting) {
       if (box1Ref.current && box2Ref.current) {
-        box1Ref.current.style.animation = 'slideTop 1s 0.1s forwards';
+        box1Ref.current.style.animation = 'slideTop 1s forwards';
         box2Ref.current.style.animation = 'slideTop 1s 0.5s forwards';
       }
     }
@@ -27,7 +27,7 @@ const MainValues = () => {
   useEffect(() => {
     const cachedRef = ref.current as HTMLDivElement;
     const observer = new IntersectionObserver(onIntersect, {
-      threshold: 0.3,
+      threshold: 0.4,
     });
 
     observer.observe(cachedRef);

@@ -20,6 +20,13 @@ const MainActivity = dynamic(() => import('components/Home/MainActivity'), {
   ssr: false,
 });
 
+const MainApplication = dynamic(
+  () => import('components/Home/MainApplication'),
+  {
+    ssr: false,
+  }
+);
+
 const Home: NextPage = () => {
   return (
     <>
@@ -31,6 +38,7 @@ const Home: NextPage = () => {
       <MainValues />
       <MainEmployment />
       <MainActivity />
+      <MainApplication />
     </>
   );
 };

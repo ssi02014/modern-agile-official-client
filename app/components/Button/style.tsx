@@ -13,16 +13,21 @@ export const StyledButton = styled.button`
   }
 `;
 
-export const StyledLinkButton = styled.a`
+export const StyledLinkButton = styled.a<{ variant: string }>`
+  width: 100%;
   text-align: center;
   padding: 15px 0;
   font-size: 1.2rem;
   border: none;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: ${({ variant, theme }) =>
+    variant === 'primary' ? `${theme.colors.main}` : '#fff'};
+  color: ${({ variant, theme }) =>
+    variant === 'primary' ? `#fff` : `${theme.colors.main}`};
   cursor: pointer;
 
   &:hover {
-    background-color: #e4e4e4;
+    background-color: ${({ variant, theme }) =>
+      variant === 'primary' ? `${theme.colors.main}` : '#e4e4e4'};
   }
 `;

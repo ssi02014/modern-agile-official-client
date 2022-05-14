@@ -13,7 +13,7 @@ export const MainActivityWrapper = styled.section`
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 50px 20px;
+    padding: 25px 20px;
   }
 `;
 

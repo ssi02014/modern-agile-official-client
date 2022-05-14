@@ -30,7 +30,10 @@ const MainEmployment = () => {
             <Box.Employment key={item.id} title={item.title} desc={item.desc} />
           ))}
         </ContentsContainer>
-        <Button.Link href="https://www.notion.so/e2fbcb54728d4ecf9014b246173f8d28">
+        <Button.Link
+          href="https://www.notion.so/e2fbcb54728d4ecf9014b246173f8d28"
+          target="_blank"
+          rel="noreferrer">
           자세히 보기
         </Button.Link>
       </InnerContainer>

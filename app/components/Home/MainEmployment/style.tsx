@@ -5,15 +5,10 @@ export const MainEmploymentWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 100px 40px;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    padding-top: 50px;
-  }
+  padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding-bottom: 50px;
-    padding: 50px 20px 50px 20px;
+    padding: 25px 20px;
   }
 `;
 
@@ -22,6 +17,7 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   border-radius: 9px;
   padding: 40px;
   margin: 0;
+  box-shadow: 1px 1px 10px #bdbdbd;
 
   & > a {
     display: none;
@@ -56,6 +52,10 @@ export const ContentsContainer = styled.article`
     margin-top: 20px;
   }
 
+  p {
+    line-height: 2;
+  }
+
   &:first-child {
     padding: 0 60px;
   }
@@ -73,7 +73,6 @@ export const ContentsContainer = styled.article`
 
     h1 {
       font-size: 1.75rem;
-      /* text-align: center; */
     }
 
     a {

@@ -32,6 +32,15 @@ export const HeaderWrapper = styled.header`
     }
   }
 
+  button {
+    background-color: ${({ theme }) => theme.colors.main};
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+  }
+
   svg {
     cursor: pointer;
     display: none;
@@ -42,6 +51,9 @@ export const HeaderWrapper = styled.header`
       display: none;
     }
     svg {
+      display: block;
+    }
+    button {
       display: block;
     }
   }

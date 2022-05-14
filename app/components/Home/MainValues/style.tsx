@@ -6,14 +6,10 @@ export const MainValuesWrapper = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 40px;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    padding: 50px 40px;
-  }
+  padding: 100px 40px 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 50px 20px;
+    padding: 50px 20px 25px 20px;
   }
 `;
 
@@ -66,6 +62,7 @@ export const Title = styled.h1`
   margin-bottom: 50px;
 
   @media ${({ theme }) => theme.media.tablet} {
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
@@ -74,7 +71,7 @@ export const Title = styled.h1`
     padding: 10px;
   }
 
-  @media ${({ theme }) => theme.media.mobile2} {
+  @media ${({ theme }) => theme.media.mobile1} {
     font-size: 1.3rem;
     padding: 10px;
   }

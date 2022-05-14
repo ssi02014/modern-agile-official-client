@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Hamburger from 'assets/hamburger.svg';
 import { HeaderWrapper, LogoContainer } from './style';
@@ -6,17 +6,24 @@ import NavMenu from '../NavMenu';
 import { HeaderInnerContainer } from 'components/InnerContainer/style';
 
 const wrappingNavData = [
-  {
-    id: 1,
-    element: <Link href={'/news'}>뉴스룸</Link>,
-  },
-  {
-    id: 2,
-    element: <Link href={'/services'}>서비스</Link>,
-  },
+  // {
+  //   id: 1,
+  //   element: <Link href={'/news'}>뉴스룸</Link>,
+  // },
+  // {
+  //   id: 2,
+  //   element: <Link href={'/services'}>서비스</Link>,
+  // },
   {
     id: 3,
-    element: <Link href={'/members'}>팀원 소개</Link>,
+    element: (
+      <a
+        href="https://www.notion.so/5b898f34e1b145c9bac93070f2806eaf?v=863e6923166f4661a340e3bdc12eb6aa"
+        target={'_blank'}
+        rel="noreferrer">
+        팀원 소개
+      </a>
+    ),
   },
   {
     id: 4,
@@ -38,6 +45,18 @@ const Header = () => {
     setIsOpenMenu(true);
   }, []);
 
+  const handleClose = useCallback(() => {
+    setIsOpenMenu(false);
+  }, []);
+
+  useEffect(() => {
+    if (isOpenMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpenMenu]);
+
   return (
     <>
       <HeaderWrapper>
@@ -48,7 +67,11 @@ const Header = () => {
             </h2>
           </LogoContainer>
 
-          <Hamburger onClick={handleOpenMenu} />
+          {!isOpenMenu ? (
+            <Hamburger onClick={handleOpenMenu} />
+          ) : (
+            <button onClick={handleClose}>x</button>
+          )}
 
           <ul>
             {wrappingNavData.map((item) => (
@@ -58,7 +81,7 @@ const Header = () => {
         </HeaderInnerContainer>
       </HeaderWrapper>
 
-      {isOpenMenu && <NavMenu />}
+      {isOpenMenu && <NavMenu list={wrappingNavData} onClose={handleClose} />}
     </>
   );
 };

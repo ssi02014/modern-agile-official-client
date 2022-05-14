@@ -6,19 +6,36 @@ import {
 } from './style';
 import Box from 'components/Box';
 import { mainEmploymentData } from './mainEmploymentsData';
+import Button from 'components/Button';
 
 const MainEmployment = () => {
   return (
     <MainEmploymentWrapper>
       <InnerContainer>
         <ContentsContainer>
-          <h1>수료생 주요 취업 리스트</h1>
+          <h1>
+            모던 애자일 수료생들은 <br />
+            주요 서비스 it 기업에서 활동하고 있습니다.
+          </h1>
+
+          <Button.Link
+            href="https://www.notion.so/e2fbcb54728d4ecf9014b246173f8d28"
+            target={'_blank'}
+            rel="noopener noreferrer">
+            자세히 보기
+          </Button.Link>
         </ContentsContainer>
         <ContentsContainer>
           {mainEmploymentData.map((item) => (
             <Box.Employment key={item.id} title={item.title} desc={item.desc} />
           ))}
         </ContentsContainer>
+        <Button.Link
+          href="https://www.notion.so/e2fbcb54728d4ecf9014b246173f8d28"
+          target={'_blank'}
+          rel="noopener noreferrer">
+          자세히 보기
+        </Button.Link>
       </InnerContainer>
     </MainEmploymentWrapper>
   );

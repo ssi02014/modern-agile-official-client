@@ -14,6 +14,10 @@ export const BoxWrapper = styled.div`
     color: ${({ theme }) => theme.colors.main};
   }
 
+  p {
+    line-height: 1.5;
+  }
+
   @media ${({ theme }) => theme.media.mobile2} {
     h3 {
       font-size: 1.15rem;

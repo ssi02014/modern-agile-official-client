@@ -8,10 +8,6 @@ export const MainValuesWrapper = styled.section`
   flex-direction: column;
   padding: 100px 40px 50px 40px;
 
-  /* @media ${({ theme }) => theme.media.tablet} {
-    padding: 50px 40px;
-  } */
-
   @media ${({ theme }) => theme.media.mobile2} {
     padding: 50px 20px 25px 20px;
   }

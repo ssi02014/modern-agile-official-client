@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Hamburger from 'assets/hamburger.svg';
 import { HeaderWrapper, LogoContainer } from './style';
@@ -45,6 +45,18 @@ const Header = () => {
     setIsOpenMenu(true);
   }, []);
 
+  const handleClose = useCallback(() => {
+    setIsOpenMenu(false);
+  }, []);
+
+  useEffect(() => {
+    if (isOpenMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpenMenu]);
+
   return (
     <>
       <HeaderWrapper>
@@ -55,7 +67,11 @@ const Header = () => {
             </h2>
           </LogoContainer>
 
-          <Hamburger onClick={handleOpenMenu} />
+          {!isOpenMenu ? (
+            <Hamburger onClick={handleOpenMenu} />
+          ) : (
+            <button onClick={handleClose}>x</button>
+          )}
 
           <ul>
             {wrappingNavData.map((item) => (
@@ -65,7 +81,7 @@ const Header = () => {
         </HeaderInnerContainer>
       </HeaderWrapper>
 
-      {isOpenMenu && <NavMenu />}
+      {isOpenMenu && <NavMenu list={wrappingNavData} onClose={handleClose} />}
     </>
   );
 };

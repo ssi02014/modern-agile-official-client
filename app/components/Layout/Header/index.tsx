@@ -1,9 +1,9 @@
-import InnerContainer from 'components/InnerContainer';
 import React, { useCallback, useState } from 'react';
 import Link from 'next/link';
 import Hamburger from 'assets/hamburger.svg';
 import { HeaderWrapper, LogoContainer } from './style';
 import NavMenu from '../NavMenu';
+import { HeaderInnerContainer } from 'components/InnerContainer/style';
 
 const wrappingNavData = [
   {
@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <>
       <HeaderWrapper>
-        <InnerContainer.Header>
+        <HeaderInnerContainer>
           <LogoContainer>
             <h2>
               <Link href={'/'}>Modern Agile</Link>
@@ -59,7 +59,7 @@ const Header = () => {
               <li key={item.id}>{item.element}</li>
             ))}
           </ul>
-        </InnerContainer.Header>
+        </HeaderInnerContainer>
       </HeaderWrapper>
 
       {isOpenMenu && <NavMenu />}

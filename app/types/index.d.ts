@@ -8,3 +8,8 @@ declare module '*.svg' {
 
   export default component;
 }
+
+declare module '*.gif' {
+  const src: string;
+  export default src;
+}

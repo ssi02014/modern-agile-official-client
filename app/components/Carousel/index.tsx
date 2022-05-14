@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import { CarouselWrapper, ImageContainer } from './style';
 
@@ -26,4 +26,4 @@ const Carousel = ({ list, settings }: Props) => {
   );
 };
 
-export default Carousel;
+export default React.memo(Carousel);

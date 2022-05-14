@@ -1,13 +1,13 @@
-import InnerContainer from 'components/InnerContainer';
+import { DefaultInnerContainer } from 'components/InnerContainer/style';
 import React from 'react';
 import { FooterWrapper } from './style';
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <InnerContainer>
+      <DefaultInnerContainer>
         <h1>푸터영역입니다.</h1>
-      </InnerContainer>
+      </DefaultInnerContainer>
     </FooterWrapper>
   );
 };

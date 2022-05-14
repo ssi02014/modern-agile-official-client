@@ -5,6 +5,10 @@ export const DefaultInnerContainer = styled.div`
   padding: 15px 0;
   display: flex;
   margin: 0 30px;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    width: 100%;
+  }
 `;
 
 export const HeaderInnerContainer = styled(DefaultInnerContainer)`

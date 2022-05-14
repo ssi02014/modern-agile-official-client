@@ -4,10 +4,11 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.colors.main};
   position: fixed;
   top: 0;
   border-bottom: 1px solid #3b3b3b;
+  z-index: 100;
 
   ul {
     display: flex;

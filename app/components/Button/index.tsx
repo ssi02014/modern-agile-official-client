@@ -8,8 +8,8 @@ interface Props {
 interface LinkProps {
   children: string;
   href: string;
-  target: string;
-  rel: string;
+  target?: string;
+  rel?: string;
 }
 
 const Button = ({ children }: Props) => {

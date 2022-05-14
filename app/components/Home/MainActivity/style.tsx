@@ -19,6 +19,7 @@ export const MainActivityWrapper = styled.section`
 
 export const InnerContainer = styled(DefaultInnerContainer)`
   padding: 0 40px;
+  opacity: 0;
 
   & + & {
     margin-top: 20px;

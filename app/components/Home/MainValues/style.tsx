@@ -18,8 +18,6 @@ export const MainValuesWrapper = styled.section`
 `;
 
 export const InnerContainer = styled(DefaultInnerContainer)`
-  justify-content: space-around;
-
   @media ${({ theme }) => theme.media.tablet} {
     flex-direction: column;
 
@@ -61,15 +59,10 @@ export const ContentsContainer = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 150px;
-  background-color: ${({ theme }) => theme.colors.main};
-  color: #fff;
-  border-radius: 50%;
+  font-size: 2.5rem;
+  padding: 20px;
+  color: ${({ theme }) => theme.colors.main};
+  border-radius: 6px;
   margin-bottom: 50px;
 
   @media ${({ theme }) => theme.media.tablet} {
@@ -78,7 +71,6 @@ export const Title = styled.h1`
 
   @media ${({ theme }) => theme.media.mobile2} {
     font-size: 1.5rem;
-    width: 120px;
-    height: 120px;
+    padding: 10px;
   }
 `;

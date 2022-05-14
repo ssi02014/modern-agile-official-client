@@ -12,6 +12,10 @@ const MainValues = dynamic(() => import('components/Home/MainValues'), {
   ssr: false,
 });
 
+const MainEmployment = dynamic(() => import('components/Home/MainEmployment'), {
+  ssr: false,
+});
+
 const Home: NextPage = () => {
   return (
     <>
@@ -21,6 +25,7 @@ const Home: NextPage = () => {
       </Head>
       <MainBanner />
       <MainValues />
+      <MainEmployment />
     </>
   );
 };

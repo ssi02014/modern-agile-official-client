@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+export const MainBannerWrapper = styled.section`
+  width: 100%;
+  height: 100vh;
+  background-color: ${({ theme }) => theme.colors.main};
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 export const BannerTitleContainer = styled.div`
   padding: 200px 0 50px 0;
   display: flex;
@@ -45,16 +55,6 @@ export const BannerTitleContainer = styled.div`
       font-size: 1rem;
     }
   }
-`;
-
-export const MainBannerWrapper = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: ${({ theme }) => theme.colors.main};
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 export const IconContainer = styled.div`

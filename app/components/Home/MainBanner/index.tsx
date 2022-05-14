@@ -25,6 +25,7 @@ const MainBanner = () => {
     autoplaySpeed: -1,
     cssEase: 'linear',
     arrows: false,
+    draggable: false,
   };
 
   return (

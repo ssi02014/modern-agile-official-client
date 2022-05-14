@@ -8,7 +8,7 @@ import {
 } from './style';
 import HumanImage from 'assets/lottie/human-move.gif';
 import Box from 'components/Box';
-import { mainValuesData } from './MainValuesData';
+import { mainValuesData } from './mainValuesData';
 
 const MainValues = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -36,7 +36,10 @@ const MainValues = () => {
 
   return (
     <MainValuesWrapper ref={ref}>
-      <Title>핵심 가치</Title>
+      <Title>
+        지향하는 핵심 가치와 방향성을 통해 <br />
+        체계적이고 효율적으로 운영됩니다.
+      </Title>
       <InnerContainer>
         <ContentsContainer ref={box1Ref}>
           {mainValuesData.slice(0, 3).map((item) => (

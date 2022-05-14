@@ -6,6 +6,7 @@ export const BoxWrapper = styled.div`
   border: ${({ theme }) => `2px solid ${theme.colors.main}`};
   border-radius: 6px;
   box-shadow: 1px 1px 5px #bdbdbd;
+  background-color: #fff;
 
   h3 {
     font-size: 1.3rem;
@@ -22,5 +23,13 @@ export const BoxWrapper = styled.div`
     p {
       font-size: 0.9rem;
     }
+  }
+`;
+
+export const BoxEmploymentWrapper = styled.div`
+  width: 100%;
+
+  h1 {
+    font-size: 2rem;
   }
 `;

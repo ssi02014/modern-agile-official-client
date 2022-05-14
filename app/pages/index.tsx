@@ -1,9 +1,14 @@
-import MainValues from 'components/Home/MainValues';
 import type { NextPage } from 'next';
+import Loading from 'components/Loading';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
 const MainBanner = dynamic(() => import('components/Home/MainBanner'), {
+  ssr: false,
+  loading: () => <Loading />,
+});
+
+const MainValues = dynamic(() => import('components/Home/MainValues'), {
   ssr: false,
 });
 

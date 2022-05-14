@@ -49,6 +49,7 @@ export const ContentsContainer = styled.section`
   flex-wrap: wrap;
   flex-direction: column;
   flex: 1.5;
+  opacity: 0;
 
   div + div {
     margin-top: 20px;

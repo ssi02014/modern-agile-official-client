@@ -8,14 +8,10 @@ import { HeaderInnerContainer } from 'components/InnerContainer/style';
 const wrappingNavData = [
   {
     id: 1,
-    element: <Link href={'/circles'}>동아리 개요</Link>,
-  },
-  {
-    id: 2,
     element: <Link href={'/news'}>뉴스룸</Link>,
   },
   {
-    id: 4,
+    id: 2,
     element: <Link href={'/services'}>서비스</Link>,
   },
   {
@@ -23,7 +19,7 @@ const wrappingNavData = [
     element: <Link href={'/members'}>팀원 소개</Link>,
   },
   {
-    id: 5,
+    id: 4,
     element: (
       <a
         href="https://www.notion.so/SW-4-5c77fa1ec6a8459581388f4142458d24"

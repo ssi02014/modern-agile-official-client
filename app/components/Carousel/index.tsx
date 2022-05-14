@@ -26,4 +26,4 @@ const Carousel = ({ list, settings }: Props) => {
   );
 };
 
-export default React.memo(Carousel);
+export default Carousel;

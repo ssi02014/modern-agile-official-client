@@ -73,4 +73,9 @@ export const Title = styled.h1`
     font-size: 1.5rem;
     padding: 10px;
   }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
 `;

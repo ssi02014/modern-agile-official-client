@@ -13,6 +13,7 @@ export const MainEmploymentWrapper = styled.section`
 
   @media ${({ theme }) => theme.media.mobile2} {
     padding-bottom: 50px;
+    padding: 50px 20px 50px 20px;
   }
 `;
 

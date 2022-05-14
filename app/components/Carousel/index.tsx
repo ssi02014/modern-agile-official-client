@@ -2,28 +2,17 @@ import React, { useMemo } from 'react';
 import Slider from 'react-slick';
 import { CarouselWrapper, ImageContainer } from './style';
 
-interface Props {
-  list: any[];
+interface ListItem {
+  id: number;
+  alt: string;
+  src: string;
 }
-const Carousel = ({ list }: Props) => {
-  const showCount = useMemo(() => {
-    if (window.innerWidth < 768) {
-      return 2;
-    }
-    return 4;
-  }, []);
+interface Props {
+  list: ListItem[];
+  settings: any;
+}
 
-  const settings = {
-    infinite: true,
-    slidesToShow: showCount,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    arrows: false,
-  };
-
+const Carousel = ({ list, settings }: Props) => {
   return (
     <CarouselWrapper>
       <Slider {...settings}>

@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 export const CarouselWrapper = styled.section`
+  padding: 0 40px;
+
   .slick-list {
     margin: 0 -10px;
   }
   .slick-slide > div {
     padding: 0 10px;
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    padding: 0 20px;
   }
 `;
 

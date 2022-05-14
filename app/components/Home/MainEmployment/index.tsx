@@ -15,7 +15,7 @@ const MainEmployment = () => {
         <ContentsContainer>
           <h1>
             모던 애자일 수료생들은 <br />
-            주요 서비스 it 기업에서 활동하고 있습니다.
+            현재 주요 IT 서비스 기업에서 활동하고 있습니다.
           </h1>
 
           <Button.Link

@@ -66,6 +66,7 @@ export const Title = styled.h1`
   margin-bottom: 50px;
 
   @media ${({ theme }) => theme.media.tablet} {
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
@@ -74,7 +75,7 @@ export const Title = styled.h1`
     padding: 10px;
   }
 
-  @media ${({ theme }) => theme.media.mobile2} {
+  @media ${({ theme }) => theme.media.mobile1} {
     font-size: 1.3rem;
     padding: 10px;
   }

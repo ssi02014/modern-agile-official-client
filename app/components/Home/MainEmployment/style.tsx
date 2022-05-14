@@ -5,11 +5,7 @@ export const MainEmploymentWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 100px 40px;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    padding-top: 50px;
-  }
+  padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
     padding-bottom: 50px;
@@ -56,6 +52,10 @@ export const ContentsContainer = styled.article`
     margin-top: 20px;
   }
 
+  p {
+    line-height: 2;
+  }
+
   &:first-child {
     padding: 0 60px;
   }
@@ -73,7 +73,6 @@ export const ContentsContainer = styled.article`
 
     h1 {
       font-size: 1.75rem;
-      /* text-align: center; */
     }
 
     a {

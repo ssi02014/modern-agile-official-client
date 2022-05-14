@@ -16,15 +16,16 @@ const wrappingNavData = [
   },
   {
     id: 3,
-    element: <Link href={'/members'}>팀원 소개</Link>,
+    element: (
+      <a href="https://www.notion.so/5b898f34e1b145c9bac93070f2806eaf?v=863e6923166f4661a340e3bdc12eb6aa">
+        팀원 소개
+      </a>
+    ),
   },
   {
     id: 4,
     element: (
-      <a
-        href="https://www.notion.so/SW-4-5c77fa1ec6a8459581388f4142458d24"
-        target={'_blank'}
-        rel="noreferrer">
+      <a href="https://www.notion.so/SW-4-5c77fa1ec6a8459581388f4142458d24">
         동아리 모집
       </a>
     ),

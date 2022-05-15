@@ -32,7 +32,7 @@ const MainValues = () => {
 
     observer.observe(cachedRef);
     return () => observer.unobserve(cachedRef);
-  }, [ref.current, onIntersect]);
+  }, [onIntersect]);
 
   return (
     <MainValuesWrapper ref={ref}>

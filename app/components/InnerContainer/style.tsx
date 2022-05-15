@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const DefaultInnerContainer = styled.section`
+export const DefaultInnerContainer = styled.div`
   width: 1250px;
   padding: 15px 0;
   display: flex;

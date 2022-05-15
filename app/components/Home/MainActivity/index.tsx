@@ -26,8 +26,8 @@ const MainActivity = () => {
     if (entry.isIntersecting) {
       if (box1Ref.current && box2Ref.current && box3Ref.current) {
         box1Ref.current.style.animation = 'slideTop 1s forwards';
-        box2Ref.current.style.animation = 'slideTop 1s 0.5s forwards';
-        box3Ref.current.style.animation = 'slideTop 1s 1s forwards';
+        box2Ref.current.style.animation = 'slideTop 1s 0.7s forwards';
+        box3Ref.current.style.animation = 'slideTop 1s 1.4s forwards';
       }
     }
   }, []);
@@ -40,7 +40,7 @@ const MainActivity = () => {
 
     observer.observe(cachedRef);
     return () => observer.unobserve(cachedRef);
-  }, [ref.current, onIntersect]);
+  }, [onIntersect]);
 
   return (
     <MainActivityWrapper ref={ref}>

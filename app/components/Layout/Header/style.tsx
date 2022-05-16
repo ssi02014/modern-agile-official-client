@@ -44,6 +44,10 @@ export const HeaderWrapper = styled.header`
   svg {
     cursor: pointer;
     display: none;
+
+    &.close {
+      width: 18px;
+    }
   }
 
   @media ${({ theme }) => theme.media.tablet} {

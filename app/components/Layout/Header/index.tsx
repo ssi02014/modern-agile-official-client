@@ -4,6 +4,7 @@ import Hamburger from 'assets/hamburger.svg';
 import { HeaderWrapper, LogoContainer } from './style';
 import NavMenu from '../NavMenu';
 import { HeaderInnerContainer } from 'components/InnerContainer/style';
+import CloseLogo from 'assets/logo/close.svg';
 
 const wrappingNavData = [
   // {
@@ -68,9 +69,9 @@ const Header = () => {
           </LogoContainer>
 
           {!isOpenMenu ? (
-            <Hamburger onClick={handleOpenMenu} />
+            <Hamburger className="hamburger" onClick={handleOpenMenu} />
           ) : (
-            <button onClick={handleClose}>x</button>
+            <CloseLogo className="close" onClick={handleClose} />
           )}
 
           <ul>

@@ -68,6 +68,7 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  margin: 0 30px;
 `;
 
 export const MainLogoContainer = styled.div`

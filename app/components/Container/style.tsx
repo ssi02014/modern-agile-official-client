@@ -10,9 +10,3 @@ export const DefaultInnerContainer = styled.div`
     width: 100%;
   }
 `;
-
-export const HeaderInnerContainer = styled(DefaultInnerContainer)`
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-`;

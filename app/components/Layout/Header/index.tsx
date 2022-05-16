@@ -1,9 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Hamburger from 'assets/hamburger.svg';
-import { HeaderWrapper, LogoContainer } from './style';
+import { HeaderWrapper, MainLogoContainer, InnerContainer } from './style';
 import NavMenu from '../NavMenu';
-import { HeaderInnerContainer } from 'components/InnerContainer/style';
 import CloseLogo from 'assets/logo/close.svg';
 
 const wrappingNavData = [
@@ -61,12 +60,12 @@ const Header = () => {
   return (
     <>
       <HeaderWrapper>
-        <HeaderInnerContainer>
-          <LogoContainer>
+        <InnerContainer>
+          <MainLogoContainer>
             <h2>
               <Link href={'/'}>Modern Agile</Link>
             </h2>
-          </LogoContainer>
+          </MainLogoContainer>
 
           {!isOpenMenu ? (
             <Hamburger className="hamburger" onClick={handleOpenMenu} />
@@ -79,7 +78,7 @@ const Header = () => {
               <li key={item.id}>{item.element}</li>
             ))}
           </ul>
-        </HeaderInnerContainer>
+        </InnerContainer>
       </HeaderWrapper>
 
       {isOpenMenu && <NavMenu list={wrappingNavData} onClose={handleClose} />}

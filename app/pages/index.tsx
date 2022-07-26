@@ -35,10 +35,10 @@ const MainFAQ = dynamic(() => import('components/Home/MainFAQ'), {
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Modern Agile</title>
         <meta name="description" content="Modern Agile Official WebPage" />
-      </Head>
+      </Head> */}
       <MainBanner />
       <MainValues />
       <MainEmployment />

@@ -47,10 +47,10 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="모던 애자일 공식 사이트" />
         <meta property="og:description" content="모던 애자일 공식 사이트" />
-        <meta
+        {/* <meta
           property="og:image"
           content="https://dbgl6r3fnusyg.cloudfront.net/seo/bunjang-og-image.png"
-        />
+        /> */}
         {/* 중복 테스트 */}
         <meta name="description" content="메타 태그 중복 테스트" />
         <meta name="keywords" content="메타 태그 중복 테스트" />

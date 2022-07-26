@@ -57,6 +57,8 @@ class MyDocument implements Document {
           <link rel="shortcut icon" href="/favicon.ico" />
 
           {/* og */}
+          <meta name="description" content="모던애자일 공식 사이트" />
+          <meta name="keywords" content="모던애자일 공식 사이트" />
           <meta
             property="og:url"
             content="https://modern-agile-official-client.vercel.app/"
@@ -64,7 +66,10 @@ class MyDocument implements Document {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="모던 애자일 공식 사이트" />
           <meta property="og:description" content="모던 애자일 공식 사이트" />
-          <meta property="og:image" content="main-logo.png" />
+          <meta
+            property="og:image"
+            content="https://dbgl6r3fnusyg.cloudfront.net/seo/bunjang-og-image.png"
+          />
         </Head>
         <body>
           <Main />

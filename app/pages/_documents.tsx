@@ -55,21 +55,6 @@ class MyDocument implements Document {
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
             rel="stylesheet"></link>
           <link rel="shortcut icon" href="/favicon.ico" />
-          <title>Modern Agile</title>
-          {/* og */}
-          <meta name="description" content="모던애자일 공식 사이트" />
-          <meta name="keywords" content="모던애자일 공식 사이트" />
-          <meta
-            property="og:url"
-            content="https://modern-agile-official-client.vercel.app/"
-          />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="모던 애자일 공식 사이트" />
-          <meta property="og:description" content="모던 애자일 공식 사이트" />
-          <meta
-            property="og:image"
-            content="https://dbgl6r3fnusyg.cloudfront.net/seo/bunjang-og-image.png"
-          />
         </Head>
         <body>
           <Main />

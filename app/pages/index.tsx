@@ -35,10 +35,23 @@ const MainFAQ = dynamic(() => import('components/Home/MainFAQ'), {
 const Home: NextPage = () => {
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>Modern Agile</title>
-        <meta name="description" content="Modern Agile Official WebPage" />
-      </Head> */}
+        {/* og */}
+        <meta name="description" content="모던애자일 공식 사이트" />
+        <meta name="keywords" content="모던애자일 공식 사이트" />
+        <meta
+          property="og:url"
+          content="https://modern-agile-official-client.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="모던 애자일 공식 사이트" />
+        <meta property="og:description" content="모던 애자일 공식 사이트" />
+        <meta
+          property="og:image"
+          content="https://dbgl6r3fnusyg.cloudfront.net/seo/bunjang-og-image.png"
+        />
+      </Head>
       <MainBanner />
       <MainValues />
       <MainEmployment />

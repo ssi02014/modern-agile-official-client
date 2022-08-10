@@ -9,12 +9,11 @@ export const MainActivityWrapper = styled.section`
   padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px;
+    padding: 50px 0px;
   }
 `;
 
 export const InnerContainer = styled(DefaultInnerContainer)`
-  padding: 0 40px;
   opacity: 0;
 
   & + & {
@@ -26,7 +25,6 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   }
 
   @media ${({ theme }) => theme.media.tablet} {
-    padding: 0px;
     flex-direction: column;
 
     section + section {
@@ -51,8 +49,8 @@ export const ContentsContainer = styled.section`
 
   p {
     line-height: 1.3;
-    padding: 0 60px;
-    font-size: 1.5rem;
+    padding: 0 20px;
+    font-size: 1.35rem;
     font-weight: bold;
     text-align: center;
     margin: auto 0;
@@ -60,6 +58,12 @@ export const ContentsContainer = styled.section`
 
   span {
     color: #996b41;
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    p {
+      font-size: 1.25rem;
+    }
   }
 
   @media ${({ theme }) => theme.media.mobile2} {

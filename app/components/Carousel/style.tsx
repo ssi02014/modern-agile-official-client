@@ -22,16 +22,20 @@ export const CarouselWrapper = styled.section`
 export const ImageContainer = styled.div`
   width: 100%;
   max-width: 768px;
-  height: 350px;
   position: relative;
-  display: flex !important;
-  justify-content: center;
+  border-radius: 9px;
+  overflow: hidden;
 
-  img {
+  picture {
     width: 100%;
-    max-width: 768px;
-    object-fit: cover;
     border-radius: 9px;
+
+    img {
+      width: 100%;
+      height: 400px;
+      max-width: 768px;
+      object-fit: cover;
+    }
   }
 
   &::before {
@@ -42,8 +46,7 @@ export const ImageContainer = styled.div`
     top: 0;
     left: 0;
     background-color: #fff;
-    opacity: 0.3;
-    border-radius: 9px;
+    opacity: 0.35;
   }
 
   @media ${({ theme }) => theme.media.tablet} {

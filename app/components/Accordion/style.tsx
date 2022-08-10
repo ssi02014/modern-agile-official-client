@@ -35,6 +35,11 @@ export const AccordionButtonContainer = styled.div`
     p {
       font-size: 1rem;
     }
+
+    span {
+      font-size: 0.75rem;
+      color: #fff;
+    }
   }
 `;
 
@@ -57,7 +62,7 @@ export const AccordionPanelContainer = styled.div`
   @media ${({ theme }) => theme.media.mobile2} {
     p {
       padding: 10px 20px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 `;

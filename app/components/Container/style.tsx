@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const DefaultInnerContainer = styled.div`
   width: 768px;
-  padding: 15px 25px;
   display: flex;
   margin: 0;
 

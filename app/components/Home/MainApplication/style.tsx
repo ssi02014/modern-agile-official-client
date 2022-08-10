@@ -8,7 +8,7 @@ export const MainApplicationWrapper = styled.section`
   padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px;
+    padding: 50px 0px;
   }
 `;
 
@@ -35,6 +35,12 @@ export const InnerContainer = styled(DefaultInnerContainer)`
 
   span {
     color: ${({ theme }) => theme.colors.sub};
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   @media ${({ theme }) => theme.media.mobile2} {

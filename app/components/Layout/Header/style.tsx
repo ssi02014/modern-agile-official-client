@@ -8,7 +8,6 @@ export const HeaderWrapper = styled.header`
   background-color: ${({ theme }) => theme.colors.main};
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #3b3b3b;
   z-index: 20;
 
   ul {
@@ -85,8 +84,14 @@ export const InnerContainer = styled(DefaultInnerContainer)`
 export const MainLogoContainer = styled.div`
   display: flex;
   align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 
   img {
+    width: 100%;
     margin-right: 10px;
   }
 `;

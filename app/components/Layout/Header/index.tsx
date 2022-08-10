@@ -4,18 +4,11 @@ import Hamburger from 'assets/hamburger.svg';
 import { HeaderWrapper, MainLogoContainer, InnerContainer } from './style';
 import NavMenu from '../NavMenu';
 import CloseLogo from 'assets/logo/close.svg';
+import WhiteLogo from 'assets/logo/white-logo.png';
 
 const wrappingNavData = [
-  // {
-  //   id: 1,
-  //   element: <Link href={'/news'}>뉴스룸</Link>,
-  // },
-  // {
-  //   id: 2,
-  //   element: <Link href={'/services'}>서비스</Link>,
-  // },
   {
-    id: 3,
+    id: 1,
     element: (
       <a
         href="https://www.notion.so/5b898f34e1b145c9bac93070f2806eaf?v=863e6923166f4661a340e3bdc12eb6aa"
@@ -26,7 +19,7 @@ const wrappingNavData = [
     ),
   },
   {
-    id: 4,
+    id: 2,
     element: (
       <a
         href="https://www.notion.so/SW-4-5c77fa1ec6a8459581388f4142458d24"
@@ -62,9 +55,9 @@ const Header = () => {
       <HeaderWrapper>
         <InnerContainer>
           <MainLogoContainer>
-            <h2>
-              <Link href={'/'}>Modern Agile</Link>
-            </h2>
+            <Link href={'/'}>
+              <img src={WhiteLogo} alt="헤더로고" />
+            </Link>
           </MainLogoContainer>
 
           {!isOpenMenu ? (

@@ -8,14 +8,14 @@ export const MainEmploymentWrapper = styled.section`
   padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px;
+    padding: 50px 20px;
   }
 `;
 
 export const InnerContainer = styled(DefaultInnerContainer)`
   background-color: ${({ theme }) => theme.colors.main};
   border-radius: 9px;
-  padding: 40px;
+  padding: 30px;
   box-shadow: 1px 1px 10px #bdbdbd;
 
   & > a {
@@ -48,7 +48,7 @@ export const ContentsContainer = styled.article`
   justify-content: space-around;
 
   h1 {
-    font-size: 2.35rem;
+    font-size: 2rem;
   }
 
   div + div {
@@ -60,12 +60,12 @@ export const ContentsContainer = styled.article`
   }
 
   &:first-child {
-    padding: 0 60px;
+    padding: 0 40px 0 0;
   }
 
   @media ${({ theme }) => theme.media.desktop} {
     &:first-child {
-      padding: 0 30px;
+      padding: 0 30px 0 0;
     }
   }
 
@@ -85,11 +85,11 @@ export const ContentsContainer = styled.article`
 
   @media ${({ theme }) => theme.media.mobile2} {
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
 
     p {
-      line-height: 1.25;
+      line-height: 1.5;
     }
   }
 `;

@@ -15,8 +15,8 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>모던 애자일</title>
-        <meta name="description" content="모던애자일 공식 사이트" />
-        <meta name="keywords" content="모던애자일 공식 사이트" />
+        <meta name="description" content="모던 애자일 공식 사이트" />
+        <meta name="keywords" content="모던 애자일 공식 사이트" />
         <meta
           property="og:url"
           content="https://modern-agile-official-client.vercel.app/"

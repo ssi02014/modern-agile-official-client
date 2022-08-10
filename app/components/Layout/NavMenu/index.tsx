@@ -1,28 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
+import { NavMenuWrapper } from './style';
 
-const NavMenu = () => {
+interface Props {
+  list: {
+    id: number;
+    element: React.ReactNode;
+  }[];
+  onClose: () => void;
+}
+const NavMenu = ({ list, onClose }: Props) => {
   return (
     <NavMenuWrapper>
-      <ul>
-        <li>hi</li>
-        <li>hi</li>
-        <li>hi</li>
-        <li>hi</li>
+      <ul onClick={onClose}>
+        {list.map((item) => (
+          <li key={item.id}>{item.element}</li>
+        ))}
       </ul>
     </NavMenuWrapper>
   );
 };
-
-const NavMenuWrapper = styled.section`
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  animation: fadeInOut 0.3s;
-  z-index: 100;
-`;
 
 export default NavMenu;

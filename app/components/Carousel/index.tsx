@@ -6,6 +6,7 @@ interface ListItem {
   id: number;
   alt: string;
   src: string;
+  webp: string;
 }
 interface Props {
   list: ListItem[];
@@ -18,7 +19,10 @@ const Carousel = ({ list, settings }: Props) => {
       <Slider {...settings}>
         {list.map((item) => (
           <ImageContainer key={item.id}>
-            <img src={item.src} alt={item.alt} />
+            <picture>
+              <source srcSet={item.webp} type="image/webp" />
+              <img src={item.src} alt={item.alt} />
+            </picture>
           </ImageContainer>
         ))}
       </Slider>

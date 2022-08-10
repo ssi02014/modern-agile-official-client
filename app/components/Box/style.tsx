@@ -19,13 +19,14 @@ export const BoxWrapper = styled.div`
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
+    padding: 15px;
     h3 {
-      font-size: 1.15rem;
+      font-size: 1rem;
       margin-bottom: 5px;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 `;

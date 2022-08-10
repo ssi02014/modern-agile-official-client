@@ -4,17 +4,14 @@ import type { AppProps } from 'next/app';
 import GlobalStyle from 'styles/globalStyles';
 import { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme';
-import Layout from 'components/Layout';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Layout from 'components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <title>Modern Agile</title>
-      </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Layout>

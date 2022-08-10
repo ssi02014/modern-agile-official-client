@@ -25,6 +25,7 @@ export const HeaderWrapper = styled.header`
   }
 
   a {
+    display: block;
     color: #fff;
 
     &:hover {

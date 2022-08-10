@@ -51,25 +51,28 @@ export const ImageContainer = styled.div`
 
   @media ${({ theme }) => theme.media.tablet} {
     height: 300px;
-
-    img {
-      height: 300px;
+    picture {
+      img {
+        height: 300px;
+      }
     }
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
     height: 200px;
-
-    img {
-      height: 200px;
+    picture {
+      img {
+        height: 200px;
+      }
     }
   }
 
   @media ${({ theme }) => theme.media.mobile1} {
     height: 150px;
-
-    img {
-      height: 150px;
+    picture {
+      img {
+        height: 150px;
+      }
     }
   }
 `;

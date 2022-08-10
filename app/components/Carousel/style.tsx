@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.section`
   margin-top: 40px;
-  /* width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 50px 40px; */
 
   .slick-list {
     margin: 0 -10px;

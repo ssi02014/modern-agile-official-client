@@ -19,14 +19,6 @@ export const MainBannerWrapper = styled.section`
 
 export const InnerContainer = styled(DefaultInnerContainer)`
   flex-direction: column;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    padding: 0 40px;
-  }
-
-  @media ${({ theme }) => theme.media.mobile2} {
-    padding: 0 25px;
-  }
 `;
 
 export const BannerTitleContainer = styled.div`

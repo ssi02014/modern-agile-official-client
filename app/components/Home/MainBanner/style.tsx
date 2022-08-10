@@ -1,50 +1,51 @@
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const MainBannerWrapper = styled.section`
   width: 100%;
-  padding: 115px 0;
+  padding: 115px 0 60px 0;
   background-color: ${({ theme }) => theme.colors.main};
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 
+  @media ${({ theme }) => theme.media.mobile2} {
+    padding: 100px 0 50px 0;
+  }
+
   @media ${({ theme }) => theme.media.mobile1} {
-    padding: 60px 0;
+    padding: 100px 0 30px 0;
+  }
+`;
+
+export const InnerContainer = styled(DefaultInnerContainer)`
+  flex-direction: column;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    padding: 0 40px;
+  }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    padding: 0 25px;
   }
 `;
 
 export const BannerTitleContainer = styled.div`
-  padding: 180px 0 50px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   color: #fff;
 
   h1 {
-    font-size: 8rem;
-    text-align: center;
+    font-size: 3rem;
   }
 
   p {
-    font-size: 1.5rem;
-  }
-
-  @media ${({ theme }) => theme.media.tablet} {
-    h1 {
-      font-size: 5rem;
-    }
-
-    p {
-      font-size: 1.3rem;
-    }
+    font-size: 1.1rem;
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 150px 0 50px 0;
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     p {
@@ -53,10 +54,10 @@ export const BannerTitleContainer = styled.div`
   }
   @media ${({ theme }) => theme.media.mobile1} {
     h1 {
-      font-size: 2.75rem;
+      font-size: 1.75rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
 `;
@@ -68,5 +69,18 @@ export const IconContainer = styled.div`
 
   svg {
     width: 30px;
+  }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    margin-top: 40px;
+    svg {
+      width: 20px;
+    }
+  }
+  @media ${({ theme }) => theme.media.mobile1} {
+    margin-top: 30px;
+    svg {
+      width: 15px;
+    }
   }
 `;

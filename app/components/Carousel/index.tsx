@@ -18,7 +18,7 @@ const Carousel = ({ list, settings }: Props) => {
       <Slider {...settings}>
         {list.map((item) => (
           <ImageContainer key={item.id}>
-            <img src={item.src} alt={item.alt} />
+            <img key={item.id} src={item.src} alt={item.alt} />
           </ImageContainer>
         ))}
       </Slider>

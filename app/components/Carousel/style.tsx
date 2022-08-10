@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const CarouselWrapper = styled.section`
-  padding: 0 40px;
+  margin-top: 40px;
+  /* width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 40px; */
 
   .slick-list {
     margin: 0 -10px;
@@ -10,20 +14,30 @@ export const CarouselWrapper = styled.section`
     padding: 0 10px;
   }
 
-  @media ${({ theme }) => theme.media.tablet} {
-    padding: 0 20px;
+  @media ${({ theme }) => theme.media.mobile2} {
+    margin-top: 30px;
+  }
+
+  @media ${({ theme }) => theme.media.mobile1} {
+    margin-top: 20px;
   }
 `;
 
 export const ImageContainer = styled.div`
+  width: 100%;
+  max-width: 768px;
+  height: 350px;
   position: relative;
+  display: flex !important;
+  justify-content: center;
 
   img {
     width: 100%;
-    height: 200px;
+    max-width: 768px;
     object-fit: cover;
     border-radius: 9px;
   }
+
   &::before {
     content: '';
     position: absolute;
@@ -34,5 +48,29 @@ export const ImageContainer = styled.div`
     background-color: #fff;
     opacity: 0.3;
     border-radius: 9px;
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    height: 300px;
+
+    img {
+      height: 300px;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    height: 200px;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.mobile1} {
+    height: 150px;
+
+    img {
+      height: 150px;
+    }
   }
 `;

@@ -62,6 +62,17 @@ export const HeaderWrapper = styled.header`
       display: block;
     }
   }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+  @media ${({ theme }) => theme.media.mobile1} {
+    h2 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const InnerContainer = styled(DefaultInnerContainer)`

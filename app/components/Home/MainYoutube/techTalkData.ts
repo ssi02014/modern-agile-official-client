@@ -11,7 +11,7 @@ export const techTalkData = [
     href: 'https://www.youtube.com/watch?v=2-T505y1US0',
     src: 'https://img.youtube.com/vi/2-T505y1US0/mqdefault.jpg',
     title: 's3와 lambda를 이용한 이미지 서버 구현',
-    presenter: '4기 이수형 • 백엔드 • 테크톡',
+    presenter: '3기 이수형 • 백엔드 • 테크톡',
   },
   {
     id: 3,

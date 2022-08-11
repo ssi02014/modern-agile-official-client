@@ -6,7 +6,7 @@ export const MainValuesWrapper = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 40px 50px 40px;
+  padding: 100px 40px;
 
   @media ${({ theme }) => theme.media.tablet} {
     padding: 50px 0;
@@ -71,7 +71,6 @@ export const ContentsContainer = styled.section`
 
 export const Title = styled.h1`
   font-size: 2rem;
-  padding: 0 20px;
   color: ${({ theme }) => theme.colors.main};
   border-radius: 6px;
   text-align: center;
@@ -82,11 +81,9 @@ export const Title = styled.h1`
 
   @media ${({ theme }) => theme.media.mobile2} {
     font-size: 1.5rem;
-    padding: 10px;
   }
 
   @media ${({ theme }) => theme.media.mobile1} {
     font-size: 1.25rem;
-    padding: 10px;
   }
 `;

@@ -7,6 +7,7 @@ import MainActivity from 'components/Home/MainActivity';
 import MainApplication from 'components/Home/MainApplication';
 import MainFAQ from 'components/Home/MainFAQ';
 import Divider from 'components/Divider';
+import MainYoutube from './MainYoutube';
 
 const HomeComponent = () => {
   return (
@@ -17,6 +18,8 @@ const HomeComponent = () => {
       <MainEmployment />
       <Divider />
       <MainActivity />
+      <Divider />
+      <MainYoutube />
       <Divider />
       <MainApplication />
       <Divider />

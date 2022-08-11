@@ -46,7 +46,7 @@ const MainActivity = () => {
   return (
     <MainActivityWrapper ref={ref}>
       <TitleContainer>
-        <Title>핵심 역량을 키우기위한 다양한 활동을 합니다.</Title>
+        <Title>핵심 역량을 키우기위한 다양한 활동을 합니다</Title>
       </TitleContainer>
       {mainActivityData.map((item, idx) => (
         <InnerContainer key={item.id} ref={insertRef(idx)}>

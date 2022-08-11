@@ -9,7 +9,7 @@ export const BoxWrapper = styled.div`
   background-color: #fff;
 
   h3 {
-    color: ${({ theme }) => theme.colors.sub};
+    color: ${({ theme }) => theme.colors.main};
     margin-bottom: 5px;
     font-size: 1.25rem;
   }

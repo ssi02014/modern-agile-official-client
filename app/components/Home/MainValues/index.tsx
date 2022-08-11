@@ -36,7 +36,7 @@ const MainValues = () => {
     <MainValuesWrapper ref={ref}>
       <InnerContainer>
         <Title>
-          지향하는 핵심 가치와 방향성을 통해 체계적이고 효율적으로 운영됩니다.
+          지향하는 핵심 가치와 방향성을 통해 체계적이고 효율적으로 운영됩니다
         </Title>
         <ImageContainer>
           <img src={HumanImage} alt="애니메이션" />

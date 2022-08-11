@@ -13,7 +13,10 @@ export const MainActivityWrapper = styled.section`
   }
 `;
 
-export const TitleContainer = styled(DefaultInnerContainer)``;
+export const TitleContainer = styled(DefaultInnerContainer)`
+  display: flex;
+  justify-content: center;
+`;
 
 export const InnerContainer = styled(DefaultInnerContainer)`
   opacity: 0;

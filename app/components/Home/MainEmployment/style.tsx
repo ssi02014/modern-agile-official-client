@@ -41,22 +41,27 @@ export const InnerContainer = styled(DefaultInnerContainer)`
 
 export const ContentsContainer = styled.article`
   width: 100%;
-  color: #fff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: #fff;
 
-  h1 {
+  h2 {
     font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: #ededed;
+    font-size: 0.8rem;
   }
 
   div + div {
     margin-top: 20px;
-  }
-
-  p {
-    line-height: 2;
   }
 
   &:first-child {
@@ -74,22 +79,26 @@ export const ContentsContainer = styled.article`
       padding: 0;
     }
 
-    h1 {
+    h2 {
       font-size: 1.75rem;
     }
 
-    a {
+    & > a {
       display: none;
     }
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    h1 {
+    h2 {
       font-size: 1.25rem;
     }
 
+    h3 {
+      font-size: 1.15rem;
+    }
+
     p {
-      line-height: 1.5;
+      font-size: 0.7rem;
     }
   }
 `;

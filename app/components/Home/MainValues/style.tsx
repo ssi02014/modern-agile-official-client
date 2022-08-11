@@ -69,7 +69,7 @@ export const ContentsContainer = styled.section`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 2rem;
   color: ${({ theme }) => theme.colors.main};
   border-radius: 6px;

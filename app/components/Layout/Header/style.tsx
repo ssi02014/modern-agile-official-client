@@ -86,7 +86,7 @@ export const MainLogoContainer = styled.div`
   display: flex;
   align-items: center;
   background: #fff;
-  border-radius: 3px;
+  border-radius: 50%;
   width: 35px;
   height: 35px;
   cursor: pointer;

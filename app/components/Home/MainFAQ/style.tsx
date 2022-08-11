@@ -5,7 +5,7 @@ export const MainFAQWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 50px 40px;
+  padding: 100px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
     padding: 50px 20px;

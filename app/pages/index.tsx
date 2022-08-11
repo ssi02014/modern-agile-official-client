@@ -2,13 +2,13 @@ import React from 'react';
 import type { NextPage } from 'next';
 import MainLogo from 'assets/logo/main-logo.png';
 import Head from 'next/head';
-import MainBanner from 'components/Home/MainBanner';
-import MainValues from 'components/Home/MainValues';
-import MainEmployment from 'components/Home/MainEmployment';
-import MainActivity from 'components/Home/MainActivity';
-import MainApplication from 'components/Home/MainApplication';
-import MainFAQ from 'components/Home/MainFAQ';
-import Divider from 'components/Divider';
+import dynamic from 'next/dynamic';
+import Loading from 'components/Loading';
+
+const HomePage = dynamic(() => import('../components/Home'), {
+  ssr: false,
+  loading: () => <Loading />,
+});
 
 const Home: NextPage = () => {
   return (
@@ -38,16 +38,7 @@ const Home: NextPage = () => {
         <meta name="twitter:card" content="summary" />
         <meta property="twitter:image" content={MainLogo} />
       </Head>
-      <MainBanner />
-      <MainValues />
-      <Divider />
-      <MainEmployment />
-      <Divider />
-      <MainActivity />
-      <Divider />
-      <MainApplication />
-      <Divider />
-      <MainFAQ />
+      <HomePage />
     </>
   );
 };

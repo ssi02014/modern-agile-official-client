@@ -21,6 +21,7 @@ export const CarouselWrapper = styled.section`
 
 export const ImageContainer = styled.div`
   width: 100%;
+  height: 400px;
   max-width: 768px;
   position: relative;
   border-radius: 9px;

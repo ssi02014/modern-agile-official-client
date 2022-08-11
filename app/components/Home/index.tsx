@@ -1,0 +1,28 @@
+import React from 'react';
+import Layout from 'components/Layout';
+import MainBanner from 'components/Home/MainBanner';
+import MainValues from 'components/Home/MainValues';
+import MainEmployment from 'components/Home/MainEmployment';
+import MainActivity from 'components/Home/MainActivity';
+import MainApplication from 'components/Home/MainApplication';
+import MainFAQ from 'components/Home/MainFAQ';
+import Divider from 'components/Divider';
+
+const HomeComponent = () => {
+  return (
+    <Layout>
+      <MainBanner />
+      <MainValues />
+      <Divider />
+      <MainEmployment />
+      <Divider />
+      <MainActivity />
+      <Divider />
+      <MainApplication />
+      <Divider />
+      <MainFAQ />
+    </Layout>
+  );
+};
+
+export default HomeComponent;

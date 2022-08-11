@@ -56,7 +56,7 @@ export const ContentsContainer = styled.article`
   }
 
   p {
-    color: #ededed;
+    color: #e4e4e4;
     font-size: 0.8rem;
   }
 

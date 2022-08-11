@@ -33,6 +33,7 @@ export const BannerTitleContainer = styled.div`
 
   p {
     font-size: 1.1rem;
+    color: #e4e4e4;
   }
 
   @media ${({ theme }) => theme.media.mobile2} {

@@ -31,9 +31,9 @@ const MainBanner = () => {
         </BannerTitleContainer>
 
         <Carousel settings={CarouselSettings} list={BannerCarouselData} />
-        <IconContainer>
+        {/* <IconContainer>
           <ArrowBottom />
-        </IconContainer>
+        </IconContainer> */}
       </InnerContainer>
     </MainBannerWrapper>
   );

@@ -7,6 +7,23 @@ export const BoxWrapper = styled.div`
   border-radius: 6px;
   box-shadow: 1px 1px 5px #bdbdbd;
   background-color: #fff;
+
+  h3 {
+    color: ${({ theme }) => theme.colors.sub};
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+  }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    padding: 12px;
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
 `;
 
 export const BoxEmploymentWrapper = styled.div`

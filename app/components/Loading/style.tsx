@@ -7,4 +7,10 @@ export const LoadingWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: 80px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 3px #bdbdbd;
+  }
 `;

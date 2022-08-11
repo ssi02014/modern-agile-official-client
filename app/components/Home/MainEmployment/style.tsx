@@ -5,17 +5,17 @@ export const MainEmploymentWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 50px 40px;
+  padding: 100px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px;
+    padding: 50px 20px;
   }
 `;
 
 export const InnerContainer = styled(DefaultInnerContainer)`
   background-color: ${({ theme }) => theme.colors.main};
   border-radius: 9px;
-  padding: 40px;
+  padding: 30px;
   box-shadow: 1px 1px 10px #bdbdbd;
 
   & > a {
@@ -41,31 +41,36 @@ export const InnerContainer = styled(DefaultInnerContainer)`
 
 export const ContentsContainer = styled.article`
   width: 100%;
-  color: #fff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: #fff;
 
-  h1 {
-    font-size: 2.35rem;
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: #e4e4e4;
+    font-size: 0.8rem;
   }
 
   div + div {
     margin-top: 20px;
   }
 
-  p {
-    line-height: 2;
-  }
-
   &:first-child {
-    padding: 0 60px;
+    padding: 0 40px 0 0;
   }
 
   @media ${({ theme }) => theme.media.desktop} {
     &:first-child {
-      padding: 0 30px;
+      padding: 0 30px 0 0;
     }
   }
 
@@ -74,22 +79,26 @@ export const ContentsContainer = styled.article`
       padding: 0;
     }
 
-    h1 {
+    h2 {
       font-size: 1.75rem;
     }
 
-    a {
+    & > a {
       display: none;
     }
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    h1 {
-      font-size: 1.5rem;
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
     }
 
     p {
-      line-height: 1.25;
+      font-size: 0.7rem;
     }
   }
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BoxWrapper = styled.div`
   width: 100%;
-  padding: 20px;
+  padding: 24px;
   border: ${({ theme }) => `2px solid ${theme.colors.main}`};
   border-radius: 6px;
   box-shadow: 1px 1px 5px #bdbdbd;
@@ -15,7 +15,7 @@ export const BoxWrapper = styled.div`
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 12px;
+    padding: 18px;
     h3 {
       font-size: 1rem;
     }

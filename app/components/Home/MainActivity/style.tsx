@@ -57,7 +57,7 @@ export const ContentsContainer = styled.section`
     padding: 0 20px;
     font-size: 1.35rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     margin: auto 0;
   }
 

@@ -11,7 +11,7 @@ const wrappingNavData = [
     id: 1,
     element: (
       <a
-        href="https://www.notion.so/5b898f34e1b145c9bac93070f2806eaf?v=863e6923166f4661a340e3bdc12eb6aa"
+        href="https://ujins.notion.site/f0a1f292418946d6a6f4e133e5ffd448?v=1f089082470b4743a739b81cd73a93b7"
         target={'_blank'}
         rel="noreferrer">
         팀원 소개
@@ -22,7 +22,7 @@ const wrappingNavData = [
     id: 2,
     element: (
       <a
-        href="https://www.notion.so/SW-4-5c77fa1ec6a8459581388f4142458d24"
+        href="https://ujins.notion.site/SW-5-97bf020acab54c56a405131f2fb2412f"
         target={'_blank'}
         rel="noreferrer">
         동아리 모집

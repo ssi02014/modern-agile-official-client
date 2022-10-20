@@ -8,13 +8,14 @@ import MainApplication from 'components/Home/MainApplication';
 import MainFAQ from 'components/Home/MainFAQ';
 import Divider from 'components/Divider';
 import MainYoutube from './MainYoutube';
+import MainDigitization from './MainDigitization';
 
 const HomeComponent = () => {
   return (
     <Layout>
       <MainBanner />
       <MainValues />
-      <Divider />
+      <MainDigitization />
       <MainEmployment />
       <Divider />
       <MainActivity />

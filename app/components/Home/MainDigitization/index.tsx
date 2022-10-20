@@ -28,7 +28,7 @@ const MainDigitization = () => {
   useEffect(() => {
     const cachedRef = ref.current as HTMLDivElement;
     const observer = new IntersectionObserver(onIntersect, {
-      threshold: 0.6,
+      threshold: 0.5,
     });
 
     observer.observe(cachedRef);

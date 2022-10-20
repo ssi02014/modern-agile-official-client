@@ -50,6 +50,7 @@ export const ContentsContainer = styled.section`
 
   img {
     width: 350px;
+    height: 350px;
   }
 
   p {
@@ -74,6 +75,7 @@ export const ContentsContainer = styled.section`
   @media ${({ theme }) => theme.media.mobile2} {
     img {
       width: 250px;
+      height: 250px;
     }
     p {
       padding: 0;

@@ -16,6 +16,9 @@ export const MainValuesWrapper = styled.section`
 export const InnerContainer = styled(DefaultInnerContainer)`
   flex-direction: column;
 
+  section {
+    margin-top: 50px;
+  }
   @media ${({ theme }) => theme.media.tablet} {
     section + section {
       margin-top: 20px;
@@ -31,15 +34,20 @@ export const ImageContainer = styled.div`
   padding: 0 200px;
   margin: 10px 0;
   flex: 1;
+
   img {
     width: 100%;
   }
 
   @media ${({ theme }) => theme.media.tablet} {
     padding: 0 200px;
+    img {
+      width: 260px;
+    }
   }
   @media ${({ theme }) => theme.media.mobile2} {
     padding: 0 100px;
+
     img {
       width: 200px;
     }
@@ -62,7 +70,7 @@ export const ContentsContainer = styled.section`
     width: 48%;
   }
 
-  @media ${({ theme }) => theme.media.mobile2} {
+  @media ${({ theme }) => theme.media.tablet} {
     div {
       width: 100%;
     }

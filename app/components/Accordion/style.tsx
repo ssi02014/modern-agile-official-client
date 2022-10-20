@@ -18,6 +18,7 @@ export const AccordionButtonContainer = styled.div`
     text-align: start;
     font-size: 1.3rem;
     color: #fff;
+    max-width: 90%;
   }
 
   span {

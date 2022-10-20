@@ -1,4 +1,3 @@
-import Carousel from 'components/Carousel';
 import React from 'react';
 import { Title } from '../MainValues/style';
 import {
@@ -15,7 +14,7 @@ const MainYoutube = () => {
   return (
     <MainYoutubeWrapper>
       <InnerContainer>
-        <Title>발표 자료는 모던 애자일 유튜브를 통해 공유됩니다</Title>
+        <Title>다양한 활동 자료는 모던 애자일 유튜브를 통해 공유됩니다</Title>
         <ContentsContainer>
           <IframeContainer>
             <iframe

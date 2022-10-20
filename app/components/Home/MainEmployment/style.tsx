@@ -17,6 +17,7 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   border-radius: 9px;
   padding: 30px;
   box-shadow: 1px 1px 10px #bdbdbd;
+  width: 1024px;
 
   & > a {
     display: none;
@@ -56,7 +57,7 @@ export const ContentsContainer = styled.article`
   }
 
   p {
-    color: #e4e4e4;
+    color: #c7c7c7;
     font-size: 0.8rem;
   }
 
@@ -65,12 +66,12 @@ export const ContentsContainer = styled.article`
   }
 
   &:first-child {
-    padding: 0 40px 0 0;
+    margin-right: 100px;
   }
 
   @media ${({ theme }) => theme.media.desktop} {
     &:first-child {
-      padding: 0 30px 0 0;
+      margin-right: 30px;
     }
   }
 
@@ -90,7 +91,7 @@ export const ContentsContainer = styled.article`
 
   @media ${({ theme }) => theme.media.mobile2} {
     h2 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
 
     h3 {
@@ -99,6 +100,19 @@ export const ContentsContainer = styled.article`
 
     p {
       font-size: 0.7rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.mobile1} {
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.6rem;
     }
   }
 `;

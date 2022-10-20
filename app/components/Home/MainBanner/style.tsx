@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const MainBannerWrapper = styled.section`
   width: 100%;
-  padding: 115px 0 60px 0;
+  padding: 150px 0 90px 0;
   background-color: ${({ theme }) => theme.colors.main};
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ export const BannerTitleContainer = styled.div`
   color: #fff;
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   p {
@@ -36,9 +36,15 @@ export const BannerTitleContainer = styled.div`
     color: #e4e4e4;
   }
 
+  @media ${({ theme }) => theme.media.tablet} {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
   @media ${({ theme }) => theme.media.mobile2} {
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     p {
@@ -47,7 +53,7 @@ export const BannerTitleContainer = styled.div`
   }
   @media ${({ theme }) => theme.media.mobile1} {
     h1 {
-      font-size: 1.75rem;
+      font-size: 2rem;
     }
     p {
       font-size: 0.8rem;

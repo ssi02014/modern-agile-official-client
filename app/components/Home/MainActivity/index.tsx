@@ -36,7 +36,7 @@ const MainActivity = () => {
   useEffect(() => {
     const cachedRef = ref.current as HTMLDivElement;
     const observer = new IntersectionObserver(onIntersect, {
-      threshold: 0.3,
+      threshold: 0.4,
     });
 
     observer.observe(cachedRef);

@@ -18,7 +18,6 @@ export const InnerContainer = styled(DefaultInnerContainer)`
 `;
 
 export const ContentsContainer = styled.div`
-  /* display: flex; */
   margin-top: 50px;
   gap: 20px;
 
@@ -34,7 +33,7 @@ export const IframeContainer = styled.div`
     width: 100%;
     height: 500px;
     border-radius: 4px;
-    box-shadow: 1px 1px 10px #bdbdbd;
+    box-shadow: 1px 1px 3px #bdbdbd;
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
@@ -48,19 +47,14 @@ export const YoutubeContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  gap: 5px;
 
   @media ${({ theme }) => theme.media.mobile2} {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
-
-    & > div {
-      width: 47.5%;
-    }
+    gap: 5px;
 
     div + div {
       margin-top: 0;
@@ -70,8 +64,8 @@ export const YoutubeContainer = styled.div`
 
 export const YoutubeItemContainer = styled.div`
   box-shadow: 1px 1px 3px #bdbdbd;
-  border-radius: 4px;
   overflow: hidden;
+  width: 47.5%;
 
   img {
     width: 100%;
@@ -105,7 +99,7 @@ export const YoutubeItemContainer = styled.div`
   }
 
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.005);
   }
 
   img:hover {
@@ -113,6 +107,10 @@ export const YoutubeItemContainer = styled.div`
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    width: 48%;
+    width: 49%;
+  }
+
+  @media ${({ theme }) => theme.media.mobile1} {
+    width: 100%;
   }
 `;

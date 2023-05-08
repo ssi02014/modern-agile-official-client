@@ -13,7 +13,7 @@ export const MainBannerWrapper = styled.section`
   }
 
   @media ${({ theme }) => theme.media.mobile1} {
-    padding: 100px 0 30px 0;
+    padding: 100px 0 50px 0;
   }
 `;
 

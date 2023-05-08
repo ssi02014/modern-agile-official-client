@@ -18,10 +18,10 @@ const MainYoutube = () => {
         <ContentsContainer>
           <IframeContainer>
             <iframe
-              src="https://www.youtube.com/embed/VHkP2Mr8-Tk"
-              title="[모던 애자일팀] 4기 OT"
+              src="https://www.youtube.com/embed/4yK_KyNdMIE"
+              title="[모던 애자일팀] Git Flow - 장준영(5기)"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen></iframe>
           </IframeContainer>
           <YoutubeContainer>

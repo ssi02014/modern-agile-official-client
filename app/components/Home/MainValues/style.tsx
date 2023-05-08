@@ -19,6 +19,7 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   section {
     margin-top: 50px;
   }
+
   @media ${({ theme }) => theme.media.tablet} {
     section + section {
       margin-top: 20px;
@@ -74,6 +75,10 @@ export const ContentsContainer = styled.section`
     div {
       width: 100%;
     }
+  }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    opacity: 1;
   }
 `;
 

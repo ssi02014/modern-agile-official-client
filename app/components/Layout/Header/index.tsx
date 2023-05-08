@@ -11,10 +11,10 @@ const wrappingNavData = [
     id: 1,
     element: (
       <a
-        href="https://ujins.notion.site/f0a1f292418946d6a6f4e133e5ffd448?v=1f089082470b4743a739b81cd73a93b7"
+        href="https://www.notion.so/1a7356e3f5ae411ab2202f8680d73a89"
         target={'_blank'}
         rel="noreferrer">
-        팀원 소개
+        5기 팀원 소개
       </a>
     ),
   },
@@ -22,10 +22,21 @@ const wrappingNavData = [
     id: 2,
     element: (
       <a
-        href="https://ujins.notion.site/SW-5-97bf020acab54c56a405131f2fb2412f"
+        href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSed39ZsIvGnJyKDdofM3Vadwi0T89rNTReIKR6X_iPqLSDpZg/viewform?usp=sf_link"
         target={'_blank'}
         rel="noreferrer">
-        동아리 모집
+        6기 지원하기
+      </a>
+    ),
+  },
+  {
+    id: 3,
+    element: (
+      <a
+        href="https://open.kakao.com/o/gck8QAif"
+        target={'_blank'}
+        rel="noreferrer">
+        문의하기
       </a>
     ),
   },

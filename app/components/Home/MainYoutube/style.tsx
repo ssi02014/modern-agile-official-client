@@ -32,7 +32,7 @@ export const IframeContainer = styled.div`
   iframe {
     width: 100%;
     height: 500px;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 1px 1px 3px #bdbdbd;
   }
 
@@ -45,27 +45,22 @@ export const IframeContainer = styled.div`
 
 export const YoutubeContainer = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 5px 0;
 
-  @media ${({ theme }) => theme.media.mobile2} {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-
-    div + div {
-      margin-top: 0;
-    }
+  div + div {
+    margin-left: 12px;
   }
 `;
 
 export const YoutubeItemContainer = styled.div`
-  box-shadow: 1px 1px 3px #bdbdbd;
   overflow: hidden;
-  width: 47.5%;
+  width: 200px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid #f3f3f3;
 
   img {
     width: 100%;
@@ -84,11 +79,12 @@ export const YoutubeItemContainer = styled.div`
     font-size: 1rem;
     margin: 5px 0;
     min-height: 40px;
+    white-space: pre-wrap;
   }
 
   p {
     font-size: 0.7rem;
-    color: #aaaaaa;
+    color: #a3a3a3;
     margin-bottom: 5px;
   }
 
@@ -99,18 +95,6 @@ export const YoutubeItemContainer = styled.div`
   }
 
   &:hover {
-    transform: scale(1.005);
-  }
-
-  img:hover {
-    filter: brightness(0.85);
-  }
-
-  @media ${({ theme }) => theme.media.mobile2} {
-    width: 49%;
-  }
-
-  @media ${({ theme }) => theme.media.mobile1} {
-    width: 100%;
+    filter: brightness(0.9);
   }
 `;

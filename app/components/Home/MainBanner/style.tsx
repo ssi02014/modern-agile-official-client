@@ -9,7 +9,7 @@ export const MainBannerWrapper = styled.section`
   justify-content: center;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 100px 0 50px 0;
+    padding: 120px 0 60px 0;
   }
 
   @media ${({ theme }) => theme.media.mobile1} {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from 'components/Layout';
 import MainBanner from 'components/Home/MainBanner';
 import MainValues from 'components/Home/MainValues';
@@ -11,6 +11,11 @@ import MainYoutube from './MainYoutube';
 import MainDigitization from './MainDigitization';
 
 const HomeComponent = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    window.history.scrollRestoration = 'manual';
+  }, []);
+
   return (
     <Layout>
       <MainBanner />

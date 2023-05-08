@@ -22,7 +22,7 @@ const MainApplication = () => {
             target="_blank"
             rel="noreferrer"
             variant="primary">
-            지원 하기
+            6기 지원 하기
           </Button.Link>
         </ButtonContainer>
       </InnerContainer>

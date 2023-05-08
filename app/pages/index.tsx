@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import type { NextPage } from 'next';
 import MainLogo from 'assets/logo/main-logo.png';
 import Head from 'next/head';

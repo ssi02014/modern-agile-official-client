@@ -49,6 +49,7 @@ export const AccordionPanelContainer = styled.div`
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   max-height: 0;
+  white-space: pre-wrap;
 
   p {
     color: ${({ theme }) => theme.colors.main};

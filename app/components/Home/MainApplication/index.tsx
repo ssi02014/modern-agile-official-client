@@ -18,7 +18,7 @@ const MainApplication = () => {
         </p>
         <ButtonContainer>
           <Button.Link
-            href="https://ujins.notion.site/SW-5-97bf020acab54c56a405131f2fb2412f"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSed39ZsIvGnJyKDdofM3Vadwi0T89rNTReIKR6X_iPqLSDpZg/viewform"
             target="_blank"
             rel="noreferrer"
             variant="primary">

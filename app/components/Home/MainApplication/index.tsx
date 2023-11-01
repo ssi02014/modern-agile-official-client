@@ -18,11 +18,11 @@ const MainApplication = () => {
         </p>
         <ButtonContainer>
           <Button.Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSed39ZsIvGnJyKDdofM3Vadwi0T89rNTReIKR6X_iPqLSDpZg/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHWMVWswRhCSzrBWtivbhP5aRJUnzWOn57aOKz1n9thBTy1Q/viewform"
             target="_blank"
             rel="noreferrer"
             variant="primary">
-            6기 지원 하기
+            7기 지원 하기
           </Button.Link>
         </ButtonContainer>
       </InnerContainer>

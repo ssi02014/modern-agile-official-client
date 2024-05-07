@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.section`
   margin-top: 40px;
+  padding: 0 40px;
+  width: 100%;
 
   .slick-list {
     margin: 0 -10px;
@@ -12,7 +14,7 @@ export const CarouselWrapper = styled.section`
 
   .slick-dots {
     button:before {
-      color: #e0e0e0;
+      color: #ffffff;
       opacity: 0.3;
     }
 
@@ -20,6 +22,17 @@ export const CarouselWrapper = styled.section`
       button:before {
         opacity: 1;
       }
+    }
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    padding: 0;
+
+    .slick-list {
+      margin: 0;
+    }
+    .slick-slide > div {
+      padding: 0 5px;
     }
   }
 

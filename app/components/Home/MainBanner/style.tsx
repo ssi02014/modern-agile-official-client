@@ -19,6 +19,8 @@ export const MainBannerWrapper = styled.section`
 
 export const InnerContainer = styled(DefaultInnerContainer)`
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 `;
 
 export const BannerTitleContainer = styled.div`
@@ -26,6 +28,7 @@ export const BannerTitleContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   color: #fff;
+  width: 760px;
 
   h1 {
     font-size: 4rem;
@@ -37,6 +40,7 @@ export const BannerTitleContainer = styled.div`
   }
 
   @media ${({ theme }) => theme.media.tablet} {
+    width: 100%;
     h1 {
       font-size: 3rem;
     }
@@ -112,7 +116,7 @@ export const ImageContainer = styled.div`
     top: 0;
     left: 0;
     background-color: #fff;
-    opacity: 0.25;
+    opacity: 0.15;
   }
 
   @media ${({ theme }) => theme.media.tablet} {

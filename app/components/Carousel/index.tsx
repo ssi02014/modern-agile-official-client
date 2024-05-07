@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { ComponentProps, PropsWithChildren } from 'react';
 import Slider from 'react-slick';
 import { CarouselWrapper } from './style';
 
-interface Props {
-  children: React.ReactNode;
-  settings: any;
+interface CarouselProps {
+  settings: ComponentProps<typeof Slider>;
 }
 
-const Carousel = ({ settings, children }: Props) => {
+const Carousel = ({ settings, children }: PropsWithChildren<CarouselProps>) => {
   return (
     <CarouselWrapper>
       <Slider {...settings}>{children}</Slider>

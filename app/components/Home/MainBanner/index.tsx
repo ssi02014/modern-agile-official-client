@@ -12,9 +12,10 @@ const MainBanner = () => {
   const CarouselSettings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplaySpeed: 5000,
+    autoplay: true,
     arrows: false,
     draggable: true,
   };

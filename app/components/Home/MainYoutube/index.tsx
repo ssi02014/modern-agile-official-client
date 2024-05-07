@@ -14,14 +14,17 @@ const MainYoutube = () => {
   return (
     <MainYoutubeWrapper>
       <InnerContainer>
-        <Title>다양한 활동 자료는 모던 애자일 유튜브를 통해 공유됩니다</Title>
+        <Title>테크톡 영상 자료는 모던 애자일 유튜브를 통해 공유됩니다</Title>
         <ContentsContainer>
           <IframeContainer>
             <iframe
-              src="https://www.youtube.com/embed/4yK_KyNdMIE"
-              title="[모던 애자일팀] Git Flow - 장준영(5기)"
+              width="1425"
+              height="810"
+              src="https://www.youtube.com/embed/RCAlGiLJrCc"
+              title="[모던 애자일팀] JWT(JSON Web Token) - 안진우(7기)"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen></iframe>
           </IframeContainer>
           <YoutubeContainer>

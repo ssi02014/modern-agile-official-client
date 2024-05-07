@@ -23,6 +23,7 @@ const MainActivity = () => {
       return box3Ref;
     }
   }, []);
+
   const onIntersect = useCallback(([entry]: IntersectionObserverEntry[]) => {
     if (entry.isIntersecting) {
       if (box1Ref.current && box2Ref.current && box3Ref.current) {

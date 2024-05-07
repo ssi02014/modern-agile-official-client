@@ -19,20 +19,20 @@ export const mainEmploymentData = [
   },
   {
     id: 4,
+    title: '드라마앤컴퍼니(리멤버)',
+    desc: '명함/직장인 커뮤니티/HR 직장인 비즈니스 플랫폼',
+    src: 'https://dramancompany.com/',
+  },
+  {
+    id: 5,
     title: '알서포트',
     desc: '원격 지원 기술 아시아 1위',
     src: 'https://www.remotecall.com/kr/?utm_source=google&utm_medium=cpc&utm_campaign=rcko-2112-main&gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSqvMUOKW-HDUdHFoJvfUyJI5F63TXffS26YA0Y7jz84iTuawBkKTgaAkL_EALw_wcB',
   },
   {
-    id: 5,
+    id: 6,
     title: 'THE VC',
     desc: '스타트업 데이터베이스 기업 1위',
     src: 'https://thevc.kr/',
-  },
-  {
-    id: 6,
-    title: '파운트',
-    desc: 'AI를 통한 자산 관리를 로보어드바이저 서비스 1위 기업',
-    src: 'https://fount.co/',
   },
 ];

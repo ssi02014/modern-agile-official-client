@@ -112,7 +112,7 @@ export const ImageContainer = styled.div`
     top: 0;
     left: 0;
     background-color: #fff;
-    opacity: 0.35;
+    opacity: 0.25;
   }
 
   @media ${({ theme }) => theme.media.tablet} {

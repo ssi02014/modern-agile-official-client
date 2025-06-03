@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.section`
   margin-top: 40px;
-  padding: 0 40px;
   width: 100%;
-  max-width: 70%;
+  max-width: 768px;
 
   .slick-list {
     margin: 0 -10px;

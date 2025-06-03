@@ -18,14 +18,15 @@ const MainYoutube = () => {
         <ContentsContainer>
           <IframeContainer>
             <iframe
-              width="1425"
-              height="810"
-              src="https://www.youtube.com/embed/RCAlGiLJrCc"
-              title="[모던 애자일팀] JWT(JSON Web Token) - 안진우(7기)"
+              width="743"
+              height="480"
+              src="https://www.youtube.com/embed/_ZtYY_aFFaU"
+              title="[모던 애자일팀] 백엔드 서버 띄우는 법 - 이희민 (9기)"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen></iframe>
+              allowFullScreen
+            />
           </IframeContainer>
           <YoutubeContainer>
             {techTalkData.map((item) => (

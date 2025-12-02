@@ -18,12 +18,11 @@ const MainApplication = () => {
         </p>
         <ButtonContainer>
           <Button.Link
-            href="https://www.notion.so/10-1e4f100dd99e808d832effb384219f9d"
+            href="https://www.notion.so/11-2b9f100dd99e80d8ac4ec284e2f5dce3"
             target="_blank"
             rel="noreferrer"
             variant="primary">
-            {/* 9기 지원 하기 */}
-            10기 소개 보러가기
+            11기 메인 노션
           </Button.Link>
         </ButtonContainer>
       </InnerContainer>

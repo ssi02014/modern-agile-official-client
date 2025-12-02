@@ -54,12 +54,12 @@ const MainDigitization = () => {
           <DigitBox ref={box3}>
             <h3>IT 서비스 회사 합격</h3>
             <p>100%</p>
-            <span>2026년 12월 1일 기준</span>
+            <span>2025년 12월 1일 기준</span>
           </DigitBox>
           <DigitBox ref={box4}>
             <h3>상용화 서비스</h3>
-            <p>10개+</p>
-            <span>2026년 12월 1일 기준</span>
+            <p>9개+</p>
+            <span>2025년 12월 1일 기준</span>
           </DigitBox>
         </DigitBoxContainer>
       </InnerContainer>
